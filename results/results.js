@@ -34,6 +34,8 @@ let myChart = new Chart(ctx, {
 });
 
 resetButton.addEventListener('click', () => {
-    window.location.replace('../');
-    localStorage.removeItem('POKEDEX');
+    if (myChart) {
+        window.location.replace('../');
+        localStorage.removeItem('POKEDEX');
+    }
 });
