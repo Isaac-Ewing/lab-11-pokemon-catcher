@@ -24,16 +24,16 @@ export function findById(someArray, Id) {
         if (item.id === Id)
             return item;
     }
-    return null;
+    return null; //I had my own version but when I was trying to figure out an error, I copied Dani's over and never switched it back
 } 
 
 export function getPokedex() {
-    const pokedexString = localStorage.getItem(POKEDEX);
+    const string = localStorage.getItem(POKEDEX);
 
-    if (!pokedexString) 
+    if (!string) 
         return ([]);
 
-    const pokedex = JSON.parse(pokedexString);
+    const pokedex = JSON.parse(string);
     return (pokedex);
 }
 
