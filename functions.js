@@ -24,7 +24,7 @@ export function findById(someArray, Id) {
         if (item.id === Id)
             return item;
     }
-    return null; //I had my own version but when I was trying to figure out an error, I copied Dani's over and never switched it back
+    return null; //I had my own version, but when I was trying to figure out an error I copied Dani's over and never switched it back
 } 
 
 export function getPokedex() {
@@ -59,7 +59,6 @@ export function encounterPokemon(Id) {
 export function capturePokemon(Id) {
     const pokedex = getPokedex();
     const pokemon = findById(pokedex, Id);
-    if (pokemon)
-        pokemon.captured++;
+    pokemon.captured++;
     setPokedex(pokedex);
 }

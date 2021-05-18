@@ -19,8 +19,11 @@ radio3.value = wildPokemon[2];
 encounterPokemon(wildPokemon[0]);
 encounterPokemon(wildPokemon[1]);
 encounterPokemon(wildPokemon[2]);
+let totalCaptures = 0;
 
 button.addEventListener('click', () => {
+    totalCaptures++;
+    console.log(totalCaptures);
     const selected = document.querySelector(':checked');
     capturePokemon(Number(selected.value));
     const wildPokemon = randomPokemon();
@@ -33,4 +36,7 @@ button.addEventListener('click', () => {
     encounterPokemon(wildPokemon[0]);
     encounterPokemon(wildPokemon[1]);
     encounterPokemon(wildPokemon[2]);
+    if (totalCaptures === 10){
+        window.location.replace('./results');
+    }
 });
