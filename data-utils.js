@@ -1,4 +1,4 @@
-import pokeData from '../pokemon.js';
+import pokeData from './pokemon.js';
 import { findById } from './functions.js';
 
 export function mungeCaptured(pokemonArray) {
