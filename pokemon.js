@@ -31,7 +31,7 @@ export default [
         'shape':'quadruped',
         'pokebase':'bulbasaur',
         'pokedex':'http://www.pokemon.com/us/pokedex/bulbasaur',
-        'times-seen':0,
+        'times_seen':0,
         'captured':0
     },
     {
@@ -66,7 +66,7 @@ export default [
         'shape':'quadruped',
         'pokebase':'ivysaur',
         'pokedex':'http://www.pokemon.com/us/pokedex/ivysaur',
-        'times-seen':0,
+        'times_seen':0,
         'captured':0
     },
     {
@@ -101,7 +101,7 @@ export default [
         'shape':'upright',
         'pokebase':'charmander',
         'pokedex':'http://www.pokemon.com/us/pokedex/charmander',
-        'times-seen':0,
+        'times_seen':0,
         'captured':0
     },
     {
@@ -136,7 +136,7 @@ export default [
         'shape':'upright',
         'pokebase':'charmeleon',
         'pokedex':'http://www.pokemon.com/us/pokedex/charmeleon',
-        'times-seen':0,
+        'times_seen':0,
         'captured':0
     },
     {
@@ -171,7 +171,7 @@ export default [
         'shape':'upright',
         'pokebase':'charizard',
         'pokedex':'http://www.pokemon.com/us/pokedex/charizard',
-        'times-seen':0,
+        'times_seen':0,
         'captured':0
     },
     {
@@ -206,7 +206,7 @@ export default [
         'shape':'upright',
         'pokebase':'squirtle',
         'pokedex':'http://www.pokemon.com/us/pokedex/squirtle',
-        'times-seen':0,
+        'times_seen':0,
         'captured':0
     },
     {
@@ -241,7 +241,7 @@ export default [
         'shape':'upright',
         'pokebase':'wartortle',
         'pokedex':'http://www.pokemon.com/us/pokedex/wartortle',
-        'times-seen':0,
+        'times_seen':0,
         'captured':0
     },
     {
@@ -276,7 +276,7 @@ export default [
         'shape':'upright',
         'pokebase':'blastoise',
         'pokedex':'http://www.pokemon.com/us/pokedex/blastoise',
-        'times-seen':0,
+        'times_seen':0,
         'captured':0
     },
     {
@@ -311,7 +311,7 @@ export default [
         'shape':'squiggle',
         'pokebase':'caterpie',
         'pokedex':'http://www.pokemon.com/us/pokedex/caterpie',
-        'times-seen':0,
+        'times_seen':0,
         'captured':0
     },
     {
@@ -346,7 +346,7 @@ export default [
         'shape':'squiggle',
         'pokebase':'metapod',
         'pokedex':'http://www.pokemon.com/us/pokedex/metapod',
-        'times-seen':0,
+        'times_seen':0,
         'captured':0
     },
     {
@@ -381,7 +381,7 @@ export default [
         'shape':'bug-wings',
         'pokebase':'beedrill',
         'pokedex':'http://www.pokemon.com/us/pokedex/beedrill',
-        'times-seen':0,
+        'times_seen':0,
         'captured':0
     },
     {
@@ -416,7 +416,7 @@ export default [
         'shape':'squiggle',
         'pokebase':'weedle',
         'pokedex':'http://www.pokemon.com/us/pokedex/weedle',
-        'times-seen':0,
+        'times_seen':0,
         'captured':0
     },
     {
@@ -451,7 +451,7 @@ export default [
         'shape':'squiggle',
         'pokebase':'kakuna',
         'pokedex':'http://www.pokemon.com/us/pokedex/kakuna',
-        'times-seen':0,
+        'times_seen':0,
         'captured':0
     },
     {
@@ -486,7 +486,7 @@ export default [
         'shape':'wings',
         'pokebase':'pidgey',
         'pokedex':'http://www.pokemon.com/us/pokedex/pidgey',
-        'times-seen':0,
+        'times_seen':0,
         'captured':0
     }
 ];

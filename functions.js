@@ -3,11 +3,11 @@ import pokeData from './pokemon.js';
 const POKEDEX = 'POKEDEX';
 
 export function randomPokemon() {
-    const p1 = Math.floor(Math.random() * 14);
-    const p2 = Math.floor(Math.random() * 14);
-    const p3 = Math.floor(Math.random() * 14);
+    const p1 = Math.ceil(Math.random() * 14);
+    const p2 = Math.ceil(Math.random() * 14);
+    const p3 = Math.ceil(Math.random() * 14);
     if (p1 === p2 || p1 === p3 || p2 === p3)
-        return (randomPokemon);
+        return (randomPokemon());
     else
         return ([p1, p2, p3]);
 }
@@ -19,17 +19,13 @@ export function getImage(Id) {
     }
 }
 
-export function findById(Id) {
-    for (let i of pokeData) {
-        if (i.id === Id)
-            return (i);
+export function findById(someArray, Id) {
+    for (let item of someArray) {
+        if (item.id === Id)
+            return item;
     }
-}
-
-export function setPokedex(newPokedex) {
-    const pokedexString = JSON.stringify(newPokedex);
-    localStorage.setItem(POKEDEX, pokedexString);
-}
+    return null;
+} 
 
 export function getPokedex() {
     const pokedexString = localStorage.getItem(POKEDEX);
@@ -41,7 +37,29 @@ export function getPokedex() {
     return (pokedex);
 }
 
+export function setPokedex(newPokedex) {
+    const pokedexString = JSON.stringify(newPokedex);
+    localStorage.setItem(POKEDEX, pokedexString);
+}
+
+export function encounterPokemon(Id) {
+    let pokedex = getPokedex();
+    let pokemon = findById(pokedex, Id);
+
+    if (!pokemon) {
+        pokedex.push(findById(pokeData, Id));
+    }
+    setPokedex(pokedex);
+    pokemon = findById(pokedex, Id);
+    if (pokemon)
+        pokemon.times_seen++;
+    setPokedex(pokedex);
+}
+
 export function capturePokemon(Id) {
     const pokedex = getPokedex();
-    
+    const pokemon = findById(pokedex, Id);
+    if (pokemon)
+        pokemon.captured++;
+    setPokedex(pokedex);
 }
